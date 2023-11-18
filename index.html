@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Le Catering" />
+    <meta name="keywords" content="html css" />
+    <meta name="auther" content="Eman Alaa Khodary" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tab icon -->
+    <link rel="icon" href="./images/favicon-16x16(1).png" type="image/png" />
+
+    <!-- basic styles and colors until css file stylesheet -->
+    <style>
+      body {
+        font-family: "Times New Roman", serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      .nav-item {
+        font-family: serif;
+        letter-spacing: 5px;
+      }
+      .menu-item-description,
+      .extraInfo,
+      #landingPage {
+        color: gray;
+      }
+      button,
+      span {
+        background-color: rgba(128, 128, 128, 0.57);
+      }
+    </style>
+    <title>Le Catering</title>
+  </head>
+
+  <body>
+    <!-- the nav bar -->
+    <nav>
+      <a href="#landingPage" class="nav-item">Gourmet au Catering</a>
+      <div>
+        <!-- this list is hidden on small screens -->
+        <ul id="hidden-on-small">
+          <!-- connecting the nav link with html parts -->
+          <li><a href="#about" class="nav-item">About</a></li>
+          <li><a href="#menu" class="nav-item">Menu</a></li>
+          <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- the main info  -->
+    <main>
+      <!-- header -->
+      <header id="landingPage">
+        <div>
+          <img src="./images/hamburger.jpg" alt="Hamburger" width="1300px" />
+        </div>
+        <h1 class="header-title">Le Catering</h1>
+      </header>
+      <!-- information about le catering restaurant -->
+      <section>
+        <div class="infoImg">
+          <img
+            src="./images/tablesetting2.jpg"
+            alt="Table setting of 3 Catering pieces"
+          />
+        </div>
+        <div class="Info">
+          <h2 id="about-title">About Catering</h2>
+          <h4>Tradition since 1889</h4>
+          <!-- adding span to style the word seasonal -->
+          <p>
+            The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor
+            sit amet, consectetur adipiscing elit consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.We only use <span>seasonal</span> ingredients.
+          </p>
+          <!-- this info is hidden on the medium screens  -->
+          <p class="extraInfo">
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum consectetur adipiscing
+            elit, sed do eiusmod temporincididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </section>
+      <!-- menu  -->
+      <section id="menu">
+        <div>
+          <h2 id="menu">Our Menu</h2>
+          <div class="menu-item">
+            <h4 class="menu-item-title">Bread Basket</h4>
+            <p class="menu-item-description">
+              Assortment of fresh baked fruit breads and muffins 5.50
+            </p>
+          </div>
+          <div class="menu-item">
+            <h4 class="menu-item-title">Honey Almond Granola with Fruits</h4>
+            <p class="menu-item-description">
+              N atural cereal of honey toasted oats, raisins, almonds and dates
+              7 .00
+            </p>
+          </div>
+          <div class="menu-item">
+            <h4 class="menu-item-title">Belgian Waffle</h4>
+            <p class="menu-item-description">
+              Vanilla flavored batter with malted flour 7.50
+            </p>
+          </div>
+          <div class="menu-item">
+            <h4 class="menu-item-title">Scrambled eggs</h4>
+            <p class="menu-item-description">
+              Scrambled eggs, roasted red pepper and garlic, with green onions
+              7.50
+            </p>
+          </div>
+          <div class="menu-item">
+            <h4 class="menu-item-title">Blueberry Pancakes</h4>
+            <p class="menu-item-description">
+              With syrup, butter and lots of berries 8.50
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="./images/tablesetting.jpg" alt="table setting of chicken" />
+        </div>
+      </section>
+      <!-- contact info -->
+      <section>
+        <div id="contact">
+          <h2>Contact</h2>
+          <p class="contact-info">
+            We offer full-service catering for any event, large or small. We
+            understand your needs and we will cater the food to satisfy the
+            biggerst criteria of them all, both look and taste. Do not hesitate
+            to contact us.
+          </p>
+          <p id="address">
+            Catering Service, 42nd Living St, 43043 New York, NY
+          </p>
+          <p class="contact-info">
+            You can also contact us by phone 00553123-2323 or email
+            catering@catering.com, or you can send us a message here:
+          </p>
+        </div>
+        <!-- reservation form  -->
+        <div>
+          <form action="#" method="post">
+            <input type="text" placeholder="Name" name="Name" id="form-name" />
+            <input
+              type="number"
+              placeholder="How many people"
+              name="peopleNember"
+              id="form-people"
+              required
+            />
+            <!-- date input with the default value -->
+            <input
+              id="form-date"
+              type="datetime-local"
+              name="reservationDate"
+              value="2020-11-16T20:30"
+              required
+            />
+
+            <input
+              type="text"
+              placeholder="Message/ Special requirements"
+              name="Message"
+              id="form-message"
+              required
+            />
+            <button type="submit">SEND MESSAGE</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div>
+        Powered by
+        <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
+      </div>
+    </footer>
+  </body>
+</html>
