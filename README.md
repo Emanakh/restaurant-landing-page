@@ -1,6 +1,7 @@
 # restaurant-landing-page 
 "HTML structure"
--  meta tags
+-  different meta tags
+-  favicon
 -  sematic html elements
 -  id and classes relevent naming
   
